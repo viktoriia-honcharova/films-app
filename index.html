@@ -18,16 +18,20 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Write movie name"
-          />
-        </div>
-        <div class="col">
-          <button type="button" class="btn btn-success" id="search-btn">
-            Search
-          </button>
+          <form id="search-form" class="d-flex justify-content-center">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Write movie name"
+              id="search-input"
+            />
+            <input
+              type="submit"
+              class="btn btn-success"
+              id="search-btn"
+              value="Search"
+            />
+          </form>
         </div>
       </div>
       <div class="row" id="films-container"></div>

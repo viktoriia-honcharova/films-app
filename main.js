@@ -1,6 +1,8 @@
 let apiKey = "fc1fef96";
 
 let searchBtn = document.querySelector("#search-btn");
+let searchInput = document.querySelector("#search-input");
+let form = document.querySelector("#search-form");
 
 const getData = async (request) => {
   const response = await fetch(
@@ -10,6 +12,7 @@ const getData = async (request) => {
   console.log(data.Search);
 };
 
-searchBtn.addEventListener("click", function () {
-  getData("thor");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  getData(searchInput.value);
 });
