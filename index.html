@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container wrapper">
       <div class="row">
         <div class="col">
           <form id="search-form" class="d-flex justify-content-center">
@@ -36,6 +36,20 @@
       </div>
       <div class="row" id="filml-list"></div>
       <div class="row" id="films-container"></div>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <button
+          type="button"
+          class="btn-close"
+          aria-label="Close"
+          id="close"
+        ></button>
+        <div class="container mt-5">
+          <div class="row" id="modal-film"></div>
+        </div>
+      </div>
     </div>
 
     <script src="./main.js"></script>

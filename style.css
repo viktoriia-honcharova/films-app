@@ -1,4 +1,4 @@
-.container {
+.wrapper {
   margin-top: 100px;
 }
 
@@ -38,4 +38,44 @@
 
 .film-block {
   margin-bottom: 50px;
+}
+
+/* MODAL CONTAINER */
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.modal {
+  width: 1000px;
+  height: 800px;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  z-index: 99;
+  background-color: #fff;
+  padding: 15px;
+}
+
+#close {
+  position: absolute;
+  right: 10px;
+}
+
+.modal-img {
+  width: 100%;
+  display: block;
+}
+
+.modal-name {
+  text-align: center;
+  background-color: aliceblue;
+  font-size: 25px;
+  line-height: 45px;
 }
