@@ -12,7 +12,7 @@
 }
 
 .poster {
-  width: 90%;
+  height: 350px;
   margin: 0 auto;
   display: block;
   border-radius: 5px;
@@ -20,8 +20,9 @@
 
 .film-name {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 10px;
+  height: 50px;
 }
 
 .film-year {
@@ -33,4 +34,8 @@
   width: 90%;
   margin: 0 auto;
   display: block;
+}
+
+.film-block {
+  margin-bottom: 50px;
 }
